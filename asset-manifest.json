@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/https://github.com/nikhila2001/my_portfolio/static/css/main.0947d240.css",
-    "main.js": "/https://github.com/nikhila2001/my_portfolio/static/js/main.44273222.js",
-    "index.html": "/https://github.com/nikhila2001/my_portfolio/index.html",
-    "main.0947d240.css.map": "/https://github.com/nikhila2001/my_portfolio/static/css/main.0947d240.css.map",
-    "main.44273222.js.map": "/https://github.com/nikhila2001/my_portfolio/static/js/main.44273222.js.map"
+    "main.css": "/my_portfolio/static/css/main.0947d240.css",
+    "main.js": "/my_portfolio/static/js/main.44273222.js",
+    "index.html": "/my_portfolio/index.html",
+    "main.0947d240.css.map": "/my_portfolio/static/css/main.0947d240.css.map",
+    "main.44273222.js.map": "/my_portfolio/static/js/main.44273222.js.map"
   },
   "entrypoints": [
     "static/css/main.0947d240.css",
