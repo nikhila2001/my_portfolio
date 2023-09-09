@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+/* || CSS Reset Styles */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* || General Styles */
+body {
+  background-color: rgb(96, 32, 96);
+  width: 100vw;
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+/* || Navbar Styles */
+.nav-item:hover {
+  background-color: green;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* || Social Links Styles */
+
+.custom-row {
+  width: 200px;
+}
+
+.resume-btn {
+  background-color: rgb(104, 150, 58);
+  border: 1px solid rgb(20, 39, 2);
+}
+
+.resume-btn:hover {
+  background-color: rgb(78, 126, 30);
+}
+
+/* || Profile Photo Styles */
+
+.profile {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+/* || Projects Page Styles */
+
+.modal-bg {
+  background-color: rgb(96, 32, 96);
+  color: whitesmoke;
+  box-shadow: 5px 5px 5px 10px rgba(90, 184, 2, 0.5);
+}
+.project-details {
+  color: greenyellow;
+}
+/* Initial style for the image container */
+.image-container {
+  width: 100%;
+  transition: transform 0.3s; /* Add a transition effect for smooth scaling */
+}
+/* Apply the scaling effect on hover */
+.image-container:hover {
+  transform: scale(1.1); /* Scale the image to 110% of its original size */
+}
+
+/* || Technologies Page Styles */
+
+.techno-container {
+  max-width: 30rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 8rem;
+}
+
+.gradient-border {
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-image: linear-gradient(to bottom right, #ff6347, #ff69b4);
+  border-image-slice: 1;
+}
+
+/* || Footer Styles */
+.footer-color {
+  background-color: rgba(0, 0, 0, 0.195);
+  color: rgba(240, 255, 255, 0.742);
 }
