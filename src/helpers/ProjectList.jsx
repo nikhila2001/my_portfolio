@@ -1,6 +1,36 @@
 export const ProjectList = [
   {
-    id: 1,
+    id:0,
+    title:"Image-Search-App",
+    code:"https://github.com/nikhila2001/Image-Search-App",
+    image:"/assets/images_of_projects/image-search.png",
+    Demo:"https://image-search-app-ten.vercel.app/",
+    description:"Search and download images by entering keywords",
+    technologies:"React.Js, React-Bootstrap, Axios library",
+    learnings:"API integration, React-hooks,Error-handling"
+  },
+  {
+    id:1,
+    title:"Shopping-Cart",
+    code:"https://github.com/nikhila2001/shopping-cart",
+    image:"/assets/images_of_projects/shopping-img.png",
+    Demo:"https://shopping-cart-beryl-one.vercel.app/",
+    description:"Ecommerce website with dummy authentication",
+    technologies:"React.Js, React-Bootstrap, react context-API",
+    learnings:"API integration, React-hooks, authenticating"
+  },
+  {
+    id:2,
+    title:"ZipSight",
+    code:"https://github.com/nikhila2001/zip-code-app",
+    image:"/assets/images_of_projects/zip-sight.png",
+    Demo:"https://zip-code-app.vercel.app/",
+    description:"You can explore locations by entering the postal code of any country or city",
+    technologies:"React.js, React-context-api, CSS, Axios, Bootstrap-Icons",
+    learnings:"State management, Fetching API Data"
+  },
+  {
+    id: 3,
     title: "ArrayBuilder",
     code: "https://github.com/nikhila2001/array-builder",
     image: "/assets/images_of_projects/arrayBuilder.png",
@@ -11,7 +41,7 @@ export const ProjectList = [
     learnings: "Arrow-functions,useState-hook,custom-styling using makeStyles",
   },
   {
-    id: 2,
+    id: 4,
     title: "TaskTracker",
     code: "https://github.com/nikhila2001/task-tracker-master",
     image: "/assets/images_of_projects/todo.png",
@@ -21,7 +51,7 @@ export const ProjectList = [
     learnings: "React Hooks,Using props,Conditional-rendering",
   },
   {
-    id: 3,
+    id: 5,
     title: "Form-Validation",
     code: "https://github.com/nikhila2001/form-validation",
     image: "/assets/images_of_projects/form.png",
@@ -31,7 +61,7 @@ export const ProjectList = [
     learnings: "Regular-Expressions",
   },
   {
-    id: 4,
+    id: 6,
     title: "Calculator",
     code: "https://github.com/nikhila2001/calci/tree/main",
     image: "/assets/images_of_projects/calci.png",
@@ -41,7 +71,7 @@ export const ProjectList = [
     learnings: "CSS Grid,DOM Manipulation,JavaScript Classes and Objects",
   },
   {
-    id: 5,
+    id: 7,
     title: "Vertical Slider",
     code: "https://github.com/nikhila2001/Vertical-slider",
     image: "/assets/images_of_projects/slider.png",
@@ -51,7 +81,7 @@ export const ProjectList = [
     learnings: "CSS positions,flex-box,CSS Transforms",
   },
   {
-    id: 6,
+    id: 8,
     title: "Responsive static Web design",
     code: "https://github.com/nikhila2001/lifestyle",
     image: "/assets/images_of_projects/lifestyle.png",

@@ -25,7 +25,7 @@ function Home() {
         <div className="col w-100 text-light">
           <h1 className="display-4">Hi, I'm Sargam Nikhila</h1>
           <h5 className="mb-4">
-            An Aspiring Frontend developer with a passion of learning and
+            An Aspiring <b style={{color:"#d4d700"}}>Frontend developer</b>  with a passion of learning and
             creating.
           </h5>
           {/* SOCIAL MEDIA LINKS */}
@@ -101,7 +101,7 @@ function Home() {
               className="btn resume-btn mx-4 rounded-2 text-nowrap fw-bold mt-1"
               rel="noopener noreferrer"
               type="button"
-              href="/assets/Resume081023.pdf"
+              href="/assets/Resume081023-2.pdf"
               download="nikhila_resume.pdf"
             >
               Resume
