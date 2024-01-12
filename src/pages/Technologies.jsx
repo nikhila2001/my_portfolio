@@ -65,7 +65,7 @@ function Technologies() {
               key={techno.key}
             >
               <img
-                className="img-fluid gradient-border p-2"
+                className="img-fluid gradient-border p-3"
                 src={techno.logo}
                 alt={techno.title}
                 style={{ width: "90px", height: "90px" }}
