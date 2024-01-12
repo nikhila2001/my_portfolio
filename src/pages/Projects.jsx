@@ -13,11 +13,8 @@ function Projects() {
         className="container"
       >
         {/* Header Section */}
-        <header className="text-light text-center mb-4">
-          <h1 className="border-bottom border-success border-4 p-2">
-            Projects
-          </h1>
-          <p className="text-start">Check out some my work</p>
+        <header className="text-light text-center ">
+          <h3 className="text-center mt-2">Check out some my work</h3>
         </header>
         {/* Card Section */}
         <div className="row">
@@ -27,7 +24,7 @@ function Projects() {
               key={project.id}
             >
               {/* Image with data attributes to trigger the modal */}
-              <div className="card bg-dark p-3 shadow">
+              <div className="card project-card p-2 ">
                 <div className="image-container">
                 <img
                 src={project.image}
@@ -40,14 +37,14 @@ function Projects() {
               />
                 </div>
             
-              <div className="card-body bg-secondary">
-                <h5 className="card-title fw-bold">{project.title}</h5>
+              <div className="card-body">
+                <h5 className="card-title  text-center" style={{color:"#61A5C2"}}>{project.title}</h5>
                 {/* Action buttons */}
                 <div className="card-actions d-flex justify-content-between ">
                   <a
                     href={project.Demo}
                     target="_blank"
-                    className="btn btn-success fw-bold"
+                    className="btn"
                     rel="noopener noreferrer"
                   >
                     Demo
@@ -55,7 +52,7 @@ function Projects() {
                   <a
                     href={project.code}
                     target="_blank"
-                    className="btn btn-success fw-bold"
+                    className="btn"
                     rel="noopener noreferrer"
                   >
                     Code
@@ -78,7 +75,7 @@ function Projects() {
             aria-labelledby={`projectModal${project.id}`}
             aria-hidden="true"
           >
-            <div className="modal-dialog modal-dialog-centered">
+            <div className="modal-dialog modal-dialog-centered" style={{maxWidth:"400px"}}>
               <div className="modal-content modal-bg ">
                 <div className="modal-header">
                   {/* Modal title */}
@@ -98,10 +95,11 @@ function Projects() {
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="img-fluid"
+                    className="img-fluid border-0 rounded"
+                     
                   />
                   {/* Project details */}
-                  <p className="mt-2 font-monospace">
+                  <p className="mt-4 font-monospace">
                     <b className="project-details">Description:</b>&nbsp; {project.description}
                   </p>
                   <p className="font-monospace">

@@ -39,8 +39,8 @@ function Technologies() {
     },
     {
       key: 8,
-      title: "GitHub",
-      logo: "/assets/logos/github.png",
+      title: "Redux Toolkit",
+      logo: "/assets/logos/redux-logo.jpg",
     },
   ];
 
@@ -51,10 +51,10 @@ function Technologies() {
   return (
     <>
       <div className="container ">
-        <header className="text-light text-center mt-5">
-          <h1 className="border-4 border-bottom border-success p-2">
+        <header className="d-block  text-light text-center mt-5">
+          <h3 className="custom-border p-2">
             Technologies
-          </h1>
+          </h3>
           <p className="mb-5">These are the technologies I've worked with</p>
         </header>
 
@@ -65,12 +65,12 @@ function Technologies() {
               key={techno.key}
             >
               <img
-                className="img-fluid gradient-border "
+                className="img-fluid gradient-border p-2"
                 src={techno.logo}
                 alt={techno.title}
-                style={{ width: "100px", height: "100px" }}
+                style={{ width: "90px", height: "90px" }}
               />
-              <p className="text-light">{techno.title}</p>
+              <small className="text-light">{techno.title}</small>
             </div>
           ))}
         </div>

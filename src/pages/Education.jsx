@@ -7,66 +7,43 @@ function Education() {
   return (
     <>
       <div className="container">
-        <header className="text-light text-center mt-5">
-          <h1 className=" border-4 border-bottom border-success p-2">
+        <header className="text-light text-center">
+          <h1 className=" custom-border p-2">
             Education
           </h1>
           <p>These are my Education Details.</p>
         </header>
-
-        <div className="card m-3 shadow ">
-          <div className="row g-0">
-            <div className="col-md-4">
-              <img
-                src="/assets/logos/idol.jpeg"
-                className="img-fluid rounded-start"
-                alt="IDOL MUMBAI UNIVERSITY"
-              />
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">
-                  IDOL Mumbai University - Kalina Campus
-                </h5>
-                <p className="card-text text-success">
-                  Master of Science in Computer Science
-                </p>
-                <p>Duration 2 Years</p>
-                <p className="card-text">
-                  <small className="text-muted">
-                    November 2022 - June 2024
-                  </small>
-                </p>
-              </div>
-            </div>
-          </div>
+        
+        <main className="d-flex flex-column  education-section mt-4 mx-3" style={{color:"#61A5C2"}}>
+        {/* MSC CARD CONTAINER */}
+        <div className="row mb-3 msc-container border rounded-3" style={{maxWidth:"640px"}} >
+          {/* idol logo image */}
+        <img src="/assets/logos/idol.jpeg" className=" col-md-3 col-xs-auto p-0 img-fluid" alt="idol logo"  />
+        {/* MSC INFO */}
+        <div className=" col-xs-auto col-md-auto p-3">
+          <h6 style={{color:"#89C2D9"}}>Masters of Science in Computer Science</h6>
+          <p className="mb-0">College Name: IDOL Mumbai University- Kalina campus</p>
+          <small>Duration: 2 years</small>
+          <small className="d-block">November 2022 - June 2024</small>
+        </div>
         </div>
 
-        <div className="card m-3 shadow">
-          <div className="row g-0">
-            <div className="col-md-4">
-              <img
-                src="/assets/logos/mu-logo.jpeg"
-                className="img-fluid rounded-start"
-                alt="MUMBAI UNIVERSITY - KALINA CAMPUS"
-              />
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">
-                  Mumbai University - Kalina Campus
-                </h5>
-                <p className="card-text text-success">
-                  Bachelor of Science in Computer Science
-                </p>
-                <p>Duration 3 Years</p>
-                <p className="card-text">
-                  <small className="text-muted">August 2019 - June 2022</small>
-                </p>
-              </div>
-            </div>
-          </div>
+        {/* BSC CARD CONTAINER */}
+        <div className="row  msc-container border rounded-3" style={{maxWidth:"640px"}} >
+          {/* MU logo image */}
+        <img src="/assets/logos/mu-logo.jpeg" className=" col-md-3 col-xs-auto p-0 img-fluid" alt="idol logo"  />
+        {/* BSC INFO */}
+        <div className=" col-xs-auto col-md-auto p-3">
+          <h6 style={{color:"#89C2D9"}}>Bachelors of Science in Computer Science</h6>
+          <p className="mb-0">College Name: BNN College - Mumbai University</p>
+          <small className="d-block">Duration: 3 years</small>
+          <small>August 2019 - June 2022</small>
+          <small className="ms-5" style={{color:"#89C2D9"}}>CGPA - 9.02</small>
         </div>
+        </div>
+
+        </main>
+        
       </div>
     </>
   );

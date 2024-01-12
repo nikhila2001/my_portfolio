@@ -8,54 +8,53 @@
 
 /* || General Styles */
 body {
-  background-color: rgb(96, 32, 96);
+  background-color: #012A4A;
   width: 100vw;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: 'Poppins', sans-serif;
+  padding-top: 6rem;
 }
 
 /* || Navbar Styles */
-.nav-item:hover {
-  background-color: green;
-  font-weight: bold;
+.custom-nav-item {
+  color: white !important;
+}
+.custom-nav-item:hover {
+  color: #468FAF !important;
+}
+.header {
+  z-index: 2;
+  background-color: #012A4A;
+  box-shadow: 0 8px 32px #2C7DA0;
 }
 
 /* || Social Links Styles */
-
-.custom-row {
-  width: 200px;
+.typewriter-effect {
+  font-size: 2.5rem;
+  color: #61A5C2;
 }
 
-.resume-btn {
-  background-color: rgb(104, 150, 58);
-  border: 1px solid rgb(20, 39, 2);
-}
 
-.resume-btn:hover {
-  background-color: rgb(78, 126, 30);
-}
 
 /* || Profile Photo Styles */
 
 .profile {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
+  border:2px solid #013A63;
+  background-color: #89C2D9;
 }
 
 /* || Projects Page Styles */
+.project-card {
+  background-color:#012A4A ;
+  border: 2px solid #89C2D9 ;
+}
 
-.modal-bg {
-  background-color: rgb(96, 32, 96);
-  color: whitesmoke;
-  box-shadow: 5px 5px 5px 10px rgba(90, 184, 2, 0.5);
-}
-.project-details {
-  color: greenyellow;
-}
 /* Initial style for the image container */
 .image-container {
   width: 100%;
@@ -66,7 +65,34 @@ body {
   transform: scale(1.1); /* Scale the image to 110% of its original size */
 }
 
+.card-actions > a {
+  background-color: #468FAF;
+  color: #012A4A;
+}
+
+.card-actions > a:hover {
+  background-color: #012A4A;
+  color:#468FAF;
+}
+
+
+.modal-bg {
+  background-color: #012A4A;
+  border: 2px solid #89C2D9 ;
+  box-shadow: 0 8px 32px #2C7DA0;
+  color: #61A5C2;
+}
+.project-details {
+  color: #2A6F97;
+}
+
+
 /* || Technologies Page Styles */
+
+.custom-border {
+  border-bottom: 3px solid #468FAF;
+  
+}
 
 .techno-container {
   max-width: 30rem;
@@ -78,7 +104,7 @@ body {
 .gradient-border {
   border: 3px solid transparent;
   background-clip: padding-box;
-  border-image: linear-gradient(to bottom right, #ff6347, #ff69b4);
+  border-image: linear-gradient(to bottom right, #2A6F97, #A9D6E5);
   border-image-slice: 1;
 }
 
@@ -86,4 +112,16 @@ body {
 .footer-color {
   background-color: rgba(0, 0, 0, 0.195);
   color: rgba(240, 255, 255, 0.742);
+}
+
+@media screen and (max-width: 375px) {
+  .typewriter-effect {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:600px ){
+  .typewriter-effect {
+    font-size: 1.5rem;
+  }
 }
