@@ -6,7 +6,7 @@ function Education() {
 
   return (
     <>
-      <div className="container">
+      <div className="container" id="education">
         <header className="text-light text-center">
           <h1 className=" custom-border p-2">
             Education

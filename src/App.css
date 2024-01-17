@@ -6,6 +6,7 @@
   margin: 0;
 }
 
+
 /* || General Styles */
 body {
   background-color: #012A4A;
@@ -16,14 +17,17 @@ body {
   align-items: center;
   font-family: 'Poppins', sans-serif;
   padding-top: 6rem;
+  
 }
 
 /* || Navbar Styles */
 .custom-nav-item {
   color: white !important;
+  line-height: 2;
+  position: relative;
 }
 .custom-nav-item:hover {
-  color: #468FAF !important;
+color: #5ca3c2 !important;
 }
 .header {
   z-index: 2;
@@ -32,16 +36,39 @@ body {
 }
 
 /* || Social Links Styles */
+
 .typewriter-effect {
   font-size: 2.5rem;
   color: #61A5C2;
 }
+.social-media-container {
+  text-align: center;
+}
+.social-media-container a {
+  background-color:#013049;
+  padding: 0.7rem;
+  margin: 0 0.3rem 0 0.3rem;
+  border-radius: 20%;
+  box-shadow:0 8px 32px #2c7da070; 
+  
+}
+.social-media-container img {
+  max-width: 30px; 
+ 
+}
+.resume-btn {
+  box-shadow:0 8px 32px #2c7da070; 
+}
 
+.resume-btn button {
+background-color: #48CAE4;
+padding: 0.5rem 1rem 0.5rem 1rem;
+}
 
 
 /* || Profile Photo Styles */
 
-.profile {
+.profile-pic {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -96,9 +123,7 @@ body {
 
 .techno-container {
   max-width: 30rem;
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 8rem;
+  
 }
 
 .gradient-border {
@@ -108,20 +133,61 @@ body {
   border-image-slice: 1;
 }
 
+/* || CONTACT FORM STYLES */
+.form-container {
+  background-color:#013A63;
+  color: #89C2D9;
+}
+
+.input-field {
+  background-color: transparent; 
+  border-color: #89C2D9;
+}
+.input-field:focus {
+  background-color: transparent;
+  border-color: #89C2D9;
+  color: white;
+}
+
+.submit-btn {
+  background-color:#89C2D9;
+  color: #003049;
+  border: none;
+}
+
+.submit-btn:hover {
+  background-color:#ADE8F4;
+  color: #03045E;
+}
+
 /* || Footer Styles */
 .footer-color {
   background-color: rgba(0, 0, 0, 0.195);
   color: rgba(240, 255, 255, 0.742);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 375px) {
+  .profile-container {
+    padding:  2rem;
+  }
   .typewriter-effect {
-    font-size: 1rem;
+    font-size: 1.5rem;
+  }
+
+}
+
+@media screen and (min-width:600px ){
+ 
+  .typewriter-effect {
+    font-size: 2rem;
   }
 }
 
-@media screen and (max-width:600px ){
+@media screen and (min-width:1000px){
+  .profile-container {
+    padding: 0
+  }
   .typewriter-effect {
-    font-size: 1.5rem;
+    font-size:2.2rem ;
   }
 }

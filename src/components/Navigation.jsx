@@ -14,7 +14,7 @@ function Navigation() {
  <Navbar fixed="top"  expand="lg" expanded={expanded} className="header " >
     <Navbar.Brand href="#home" className="ms-3 fs-2 fw-bold" style={{color:"#468FAF"}}> NS</Navbar.Brand>
       <Navbar.Toggle className="me-3" onClick={() => setExpanded(!expanded)
-      } aria-controls="basic-navbar-nav" />
+      } aria-controls="basic-navbar-nav" style={{backgroundColor:"#0077B6"}} />
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav onClick={() => setExpanded(false)} className="ms-auto">
           <Nav.Link className=" mx-3 custom-nav-item fs-5" as={Link} to="/"><HouseDoor/> Home</Nav.Link>

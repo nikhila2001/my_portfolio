@@ -11,6 +11,7 @@ function Projects() {
       {/* Parent Container Holds - Header, Cards, Modal*/}
       <div
         className="container"
+        id="projects"
       >
         {/* Header Section */}
         <header className="text-light text-center ">
