@@ -80,11 +80,12 @@ function Home() {
           >
 
           <div className='resume-btn d-inline-block mx-1'>
-          <button
+          <a
+          type='button'
           className='border-0 rounded '
           href='assets/nikhila-s-resume.pdf'
           download="Nikhila_Resume"
-          >Resume <Download className='fs-6'/> </button>
+          >Resume <Download className='fs-6'/> </a>
           </div>
           </OverlayTrigger>
          

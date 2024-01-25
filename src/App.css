@@ -29,6 +29,10 @@ body {
 .custom-nav-item:hover {
 color: #5ca3c2 !important;
 }
+.custom-nav-item.active-link {
+  color:#48CAE4 !important;
+  font-weight: bold;
+}
 .header {
   z-index: 2;
   background-color: #012A4A;
@@ -60,9 +64,11 @@ color: #5ca3c2 !important;
   box-shadow:0 8px 32px #2c7da070; 
 }
 
-.resume-btn button {
+.resume-btn a {
 background-color: #48CAE4;
 padding: 0.5rem 1rem 0.5rem 1rem;
+color: #03045E;
+text-decoration: none;
 }
 
 
